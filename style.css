@@ -69,13 +69,6 @@ background: linear-gradient(0deg, rgb(21, 41, 93, 0.97) 0%, rgb(5, 14, 40, 1) 10
 .menu-list li a:hover{
   color: #007bff;
 }
-.banner{
-  background: url("banner.jpg") no-repeat;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 .about{
   padding: 30px 0;
 }
@@ -106,7 +99,7 @@ background: linear-gradient(0deg, rgb(21, 41, 93, 0.97) 0%, rgb(5, 14, 40, 1) 10
     background: 
     linear-gradient(180deg, #0A142F -20.49%, rgba(10, 20, 47, 0.46) 24.31%),
     url('./Asset/DSC00001.JPG') no-repeat center center / cover ;
-    min-height: 100vh;
+    height: 100vh;
     background-position: 25% 5%;
     width: 100%;
     /* Create the parallax scrolling effect */
@@ -199,12 +192,17 @@ background: linear-gradient(0deg, rgb(21, 41, 93, 0.97) 0%, rgb(5, 14, 40, 1) 10
 
 /* 3dvirtual lab tour */
 .containervirtuallabtour{
-    height: 95vh;
-    background: 
+    height: 90vh;
+    /* background: 
     linear-gradient(180deg, rgba(10,20,47,0) 0%, rgba(10, 20, 47, 0.85) 100%),
-    url("./Asset/DSC00001.JPG") no-repeat 50% 10% / cover ;
-    padding-left: 4vw;
+    url("./Asset/DSC00001.JPG") no-repeat 50% 10% / cover ; */
     position: relative;
+}
+
+.containervirtuallabtour iframe{
+  width: 100%;
+  height: 100%;
+  /* padding: 0 6vw; */
 }
 .containervirtuallabtour h3{
   color: white;
@@ -212,13 +210,14 @@ background: linear-gradient(0deg, rgb(21, 41, 93, 0.97) 0%, rgb(5, 14, 40, 1) 10
   font-weight: 500;
   position: absolute;
   bottom: 0;
+  padding-left: 6vw;
 }
 .containervirtuallabtour img{
   max-height: 35%;
   max-width: 35% ;
- position: relative;
+ position: absolute;
  top: 30%;
- left: 35%;
+ left: 40%;
  
 }
 
@@ -284,6 +283,11 @@ background: linear-gradient(0deg, rgb(21, 41, 93, 0.97) 0%, rgb(5, 14, 40, 1) 10
   .containerourasisten{
     flex-direction: column;
   }
+  .paralax{   
+    height: 80vh;
+    background-position: 55%  ;
+    background-size:cover;
+  }
   .ourasisten{
     width: 100%;
   }
@@ -300,6 +304,7 @@ background: linear-gradient(0deg, rgb(21, 41, 93, 0.97) 0%, rgb(5, 14, 40, 1) 10
     font-size: 27px;
   }
 
+  
   .paralax div h2{
       font-size: 100px;
   }
