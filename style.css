@@ -361,6 +361,7 @@ padding: 3vh 6vw;
 }
 .preview p{
   text-align: justify;
+  font-size: 1vw;
 }
 .containerblog a:hover{
 color: #007bff;
@@ -380,6 +381,9 @@ color: #007bff;
 @media (max-width: 900px) {
   .content{
     padding: 0 30px;
+  }
+  .preview p{
+    font-size: 1.5vw;
   }
 }
 @media (max-width: 868px) {
@@ -423,6 +427,11 @@ color: #007bff;
   .paralax div h2{
       font-size: 4vw;
   }
+  .thumbnail{
+    
+    padding: 0.5rem;
+
+  }
 }
 @media (max-width: 576px){
   .containerourasisten{
@@ -441,6 +450,20 @@ color: #007bff;
   }
   .containervirtuallabtour h3{
     font-size: 5vw;
+  }
+  .preview p{
+    font-size: 1.75vw;
+  }
+  .thumbnail{
+    
+    padding: 0.5rem;
+
+  }
+  .thumbnail img{
+    width: 100%;
+  }
+  .preview h3{
+    font-size:  1.6vw;
   }
 }
 
